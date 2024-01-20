@@ -1,0 +1,79 @@
+:root {
+  --cor-mensagem-primaria: #3b4a54;
+  --cor-mensagem-secundaria: #00a884;
+  --cor-hover: #8b8b8b78;
+}
+
+li {
+  padding: 10px 30px 10px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: var(--cor-mensagem-primaria);
+  color: white;
+  width: fit-content;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.message {
+  position: relative;
+}
+
+.message .options,
+.message .visualized {
+  position: absolute;
+}
+
+.message .options {
+  top: 2px;
+  right: 5px;
+  visibility: hidden;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message:hover .options {
+  visibility: visible;
+}
+
+.message .options:hover {
+  background-color: var(--cor-hover);
+}
+
+.message .visualized {
+  bottom: 2px;
+  right: 10px;
+}
+
+svg {
+  width: 10px;
+  height: 10px;
+  fill: white;
+}
+
+.message .options {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.message .options:hover {}
+
+.visualized.yes svg {
+  fill: #74C0FC;
+}
+
+.message.me {
+  margin-left: auto;
+  background-color: var(--cor-mensagem-secundaria);
+}

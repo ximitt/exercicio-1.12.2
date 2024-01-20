@@ -1,0 +1,16 @@
+button {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: none;
+}
+
+button:hover {
+  background: var(--cor-hover);
+}
+
+button svg {
+  width: 20px;
+  height: 20px;
+}

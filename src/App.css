@@ -1,0 +1,26 @@
+:root {
+  --cor-mensagem-primaria: #3b4a54;
+  --cor-mensagem-secundaria: #00a884;
+  --cor-hover: #8b8b8b78;
+}
+
+html,
+body,
+.chat {
+  height: 32em;
+}
+
+.chat {
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
